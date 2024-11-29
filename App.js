@@ -5,13 +5,11 @@ export default function App() {
   return (
     <View style={styles.container}>
       {/* Teks di tengah */}
-      <Text style={styles.text}>Teks di Tengah</Text>
+      <Text style={styles.text}>Teks Di Tengah</Text>
 
-      {/* Kotak dengan tata letak horizontal */}
+      {/* Kotak horizontal */}
       <View style={styles.boxContainer}>
-        {/* Kotak 1 */}
-        <View style={[styles.box, { backgroundColor: "blue" }]} />
-        {/* Kotak 2 */}
+        <View style={[styles.box, { backgroundColor: "orange" }]} />
         <View style={[styles.box, { backgroundColor: "green" }]} />
       </View>
     </View>
@@ -21,20 +19,20 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#d3d3d3", // Warna abu-abu terang
-    justifyContent: "center", // Pusatkan secara vertikal
-    alignItems: "center", // Pusatkan secara horizontal
+    backgroundColor: "#d3d3d3", // Latar belakang abu-abu terang
+    justifyContent: "center", // Posisi vertikal di tengah
+    alignItems: "center", // Posisi horizontal di tengah
   },
   text: {
     fontSize: 24,
     color: "blue",
     fontWeight: "bold",
-    marginBottom: 40, // Memberi jarak antara teks dan kotak
+    marginBottom: 40, // Jarak ke bawah untuk kotak
   },
   boxContainer: {
     flexDirection: "row", // Tata letak horizontal
     justifyContent: "space-between", // Jarak merata antar kotak
-    width: "80%", // Lebar ruang untuk dua kotak
+    width: "80%", // Lebar ruang untuk kotak
   },
   box: {
     width: 100, // Lebar kotak
